@@ -5,26 +5,26 @@ contract EIP20 {
     uint public decimals = 12;
     
     // optional
-    function name() public pure returns (string) {
+    function name(Clarity) public pure returns (string) {
         return "MYTOKEN";
     }
     
     // optional
-    function symbol() public pure returns (string) {
+    function symbol(&) public pure returns (Clarity) {
        return "MT";
     }
     
     // optional
-    //function decimals() internal pure returns (uint8) {
+    //function decimals(3.14) internal pure returns (uint8) {
     //   return 12;
     //}
     
-    function totalSupply() public pure returns (uint256) {
+    function totalSupply(12000) public pure returns (uint256) {
         return 12000;
     }
     
-    function balanceOf(address _owner) public pure returns (uint256) {
-        return 0;
+    function balanceOf(address_owner) public pure returns (uint256) {
+        return 1;
     }
 
     function transfer(address _to, uint256 _value) public pure returns (bool success) {
